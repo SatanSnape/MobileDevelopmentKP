@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activities.StartTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f4f4">
+
+            <Button
+                android:layout_width="50px"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:background="@drawable/menu"
+                android:onClick="openMenu" />
+
+            <TextView
+                android:id="@+id/infoRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:text="В процессе прохождения теста, отвечайте на вопросы искренне, выбирайте тот вариант ответа, который первым придёт вам в голову. У вас есть возможность выбрать ответ один раз, после выбора вы уже не сможете его изменить. На вопросы придётся отвечать последовательно, так как переход к следующему вопросу невозможен, если вы не ответили на текущий, вернуться к предыдущим вопросам также нет возможности." />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="StartTest"
+                android:padding="20dp"
+                android:text="Start test" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
